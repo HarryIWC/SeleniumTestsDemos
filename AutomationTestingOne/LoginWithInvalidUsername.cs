@@ -30,6 +30,7 @@ namespace AutomationTestingOne
         [Test]
         public void LoginForm()
         {
+            //non-existing username
             IWebElement usernameField = Driver.FindElement(By.Id("user-name"));
             usernameField.SendKeys("locked_out_user");
 
